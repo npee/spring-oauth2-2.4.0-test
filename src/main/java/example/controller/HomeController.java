@@ -11,7 +11,14 @@ import java.security.Principal;
 public class HomeController {
 
     @GetMapping
+    public String ignoreSecurity() {
+        return "Spring Security ignoring Test";
+    }
+
+    /*
+    @GetMapping
     public Principal responsePrincipal(Principal principal) {
         return principal;
     }
+    */
 }
